@@ -45,6 +45,7 @@ a {
     padding: 0;
     max-width: 1440px;
     display: flex;
+    align-items: center;
 }
 
 .list {
@@ -76,11 +77,8 @@ body button {
 .header-container {
     margin: 0 auto;
     padding: 16px 32px;
-    display: flex;
-    /* flex-direction: row; */
-    align-items: center;
-    /* justify-content: space-between; */
-    /* padding: 16px 16px 0 16px; */
+
+    /* align-items: center; */
 }
 
 .header-nav {
@@ -109,7 +107,7 @@ body button {
     padding-top: 206px;
     padding-bottom: 100px;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
 }
 
@@ -130,7 +128,6 @@ body button {
 .hero-title-assent::after {
     content: attr(data-text);
     font-weight: 400;
-    /* font-size: 64px; */
     position: absolute;
     left: 12px;
     top: -15px;
@@ -154,17 +151,13 @@ body button {
 }
 
 /* --about us-- */
-/* .about {
-    
-} */
 
 .about-container {
-    /* margin: 100px auto; */
     max-width: 1024px;
     margin: 100px auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     background-image: url(/images/UkrMap-min.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -186,10 +179,65 @@ body button {
     margin-bottom: 163px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     gap: 32px;
-
     justify-content: center;
+}
 
+/* --our tours-- */
 
+.tours-container {
+    flex-direction: column;
+}
+
+.tours-title {
+    margin-bottom: 64px;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+}
+
+.tours-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.img-wrapp {
+    width: 704px;
+    height: 505px;
+    overflow: hidden;
+}
+
+.img-wrapp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Зображення заповнює контейнер і зберігає пропорції, але може бути обрізане */
+}
+
+.tours-name {
+    margin-top: 106px;
+    margin-bottom: 32px;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+}
+
+.list-marked {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.tour-description {
+    margin-left: 32px;
+}
+
+.tour-description p {
+    margin: 18px 0 16px;
 }
