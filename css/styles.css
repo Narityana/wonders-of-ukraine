@@ -66,11 +66,12 @@ body button {
     border-radius: 4px;
 }
 
+/* --header-- */
+
 .header {
     position: absolute;
     width: 100%;
 }
-
 
 .header-container {
     margin: 0 auto;
@@ -95,6 +96,8 @@ body button {
     align-items: center;
     gap: 64px;
 }
+
+/* --hero-- */
 
 .hero-container {
     background-image: url(/images/hero-back-min.jpg);
@@ -142,11 +145,51 @@ body button {
     -webkit-text-fill-color: transparent;
 }
 
-
 .hero-button {
     margin-top: 107px;
     z-index: 1;
     width: 174px;
     height: 54px;
     border: none;
+}
+
+/* --about us-- */
+/* .about {
+    
+} */
+
+.about-container {
+    /* margin: 100px auto; */
+    max-width: 1024px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/images/UkrMap-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.about-title {
+    margin-top: 72px;
+    margin-bottom: 64px;
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+}
+
+.about-text {
+    margin-bottom: 163px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 32px;
+
+    justify-content: center;
+
+
 }
