@@ -19,15 +19,17 @@
 	<!-- <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css"> -->
 
-	<link rel="stylesheet" href="./css/styles.css">
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Jomolhari&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
 		rel="stylesheet">
+
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+
+
 	<!-- <link rel="stylesheet" href="css/media.css"> -->
 
 	<!-- <script src="libs/jquery/jquery-3.6.0.min.js" defer></script> -->
@@ -37,14 +39,14 @@
 </head>
 
 <body>
-	<header>
-		<div class="container header__container">
-			<nav class="nav">
-				<a href="./" lang="en" class="header__logo">
-					<img src="/images/Logo.png" alt="Logo">
-				</a>
+	<header class="header">
 
-				<ul class="menu-nav">
+		<div class="header-container container">
+			<a href="./" lang="en" class="header-logo">
+				<img src="/images/Logo.png" alt="Logo">
+			</a>
+			<nav class="header-nav">
+				<ul class="menu-nav list">
 					<li class="menu-item">
 						<a href="">About us</a>
 					</li>
@@ -60,218 +62,247 @@
 				</ul>
 			</nav>
 		</div>
+
+
 	</header>
 	<main>
-		<section class="hero">
-			<h3>Unlock the Wonders
-				<br />
-				of
-			</h3>
-			<h1>Ukraine</h1>
-			<button>Our tours</button>
+		<section class="hero section">
+			<div class="container hero-container">
+				<h1 class="hero-title">Unlock the Wonders
+					<br />
+					of
+					<br>
+					<span class="hero-title-assent" data-text="Ukraine">Ukraine</span>
+				</h1>
+				<button class="hero-button" type="button">Our tours</button>
+			</div>
+
 		</section>
 		<section class="about-us">
-			<h2>About us</h2>
-			<p>Welcome to our travel agency in Ukraine! We are a locally owned and operated travel agency that
-				specializes in creating unique and unforgettable travel experiences for our clients. Our team of
-				experienced travel professionals is dedicated to providing personalized service to help you plan your
-				dream vacation. We have extensive knowledge of Ukraine's culture, history, and geography, which allows
-				us to create customized itineraries that showcase the best of our beautiful country.</p>
-			<p>We are committed to providing our clients with exceptional customer service and support throughout their
-				travels. Our team is always available to assist you with any questions or concerns you may have before,
-				during, and after your trip.
-				<br>
-				<br>
-				Thank you for considering our travel agency for your travel needs. We look forward to helping you plan
-				an unforgettable vacation in Ukraine or beyond!
-			</p>
+			<div class="container">
+				<h2>About us</h2>
+				<p>Welcome to our travel agency in Ukraine! We are a locally owned and operated travel agency that
+					specializes in creating unique and unforgettable travel experiences for our clients. Our team of
+					experienced travel professionals is dedicated to providing personalized service to help you plan
+					your
+					dream vacation. We have extensive knowledge of Ukraine's culture, history, and geography, which
+					allows
+					us to create customized itineraries that showcase the best of our beautiful country.</p>
+				<p>We are committed to providing our clients with exceptional customer service and support throughout
+					their
+					travels. Our team is always available to assist you with any questions or concerns you may have
+					before,
+					during, and after your trip.
+					<br>
+					<br>
+					Thank you for considering our travel agency for your travel needs. We look forward to helping you
+					plan
+					an unforgettable vacation in Ukraine or beyond!
+				</p>
+			</div>
+
 		</section>
 		<section class="our-tours">
-			<h2>Our tours</h2>
-			<ul>
-				<li>
-					<img src="./images/Rectangle 1940-min.png" alt="Lake Synevir">
-					<h4>Lake Synevyr and Shipit waterfall</h4>
-					<ul>
-						<li>Departure from Lviv (07:00) / Stryi (08:00)</li>
-						<li>Pylypets (overview of Shipit waterfall and lunch)</li>
-						<li>Synevyr Pass (photographing and viewing of Carpathian panoramas)</li>
-						<li>"Synevyr" National Park (brown bear rehabilitation center and transition to the lake)</li>
-						<li>Stryi (21:00)/Lviv (return by 22:00)</li>
-					</ul>
-					<p>Included:</p>
-					<ul>
-						<li>
-							<svg width="24px" height="24px">
-								<use href="./images/symbol-defs.svg#icon-bus"></use>
-							</svg>
-							<p>Transfer</p>
-						</li>
-						<li>
-							<svg width="24px" height="24px">
-								<use href="./images/symbol-defs.svg#icon-id-card"></use>
-							</svg>
-							<p>Travel insurance</p>
-						</li>
-						<li>
-							<svg width="24px" height="24px">
-								<use href="./images/symbol-defs.svg#icon-face"></use>
-							</svg>
-							<p>Professional guide</p>
-						</li>
-						<li>
-							<svg width="24px" height="24px">
-								<use href="./images/symbol-defs.svg#icon-ticket"></use>
-							</svg>
-							<p>Travel insurance</p>
-						</li>
-					</ul>
-					<button>Book</button>
-					<p>Price:</p>
-					<p>2000 UAH</p>
-				</li>
-				<li>
-					<img src="./images/Rectangle 1942-min.png" alt="">
-					<h4>Ancient History & Vibrant Present</h4>
-					<ul>
-						<li>Departure from Kiev (08:00)</li>
-						<li>St. Sophia's Cathedral (iconic UNESCO World Heritage site)</li>
-						<li>Golden Gate (historical monument visit)</li>
-						<li>Bessarabsky Market (tasting local delicacies)</li>
-						<li>Kiev Pechersk Lavra (exploration of the significant monastery)</li>
-						<li>Return to Kiev by 20:00</li>
-					</ul>
-					<p>Included:</p>
-					<ul>
-						<li>
-							<svg width="24px" height="24px">
-								<use href="./images/symbol-defs.svg#icon-bus"></use>
-							</svg>
-							<p>Transfer</p>
-						</li>
-						<li>
-							<svg width="24px" height="24px">
-								<use href="./images/symbol-defs.svg#icon-id-card"></use>
-							</svg>
-							<p>Travel insurance</p>
-						</li>
-						<li>
-							<svg width="24px" height="24px">
-								<use href="./images/symbol-defs.svg#icon-face"></use>
-							</svg>
-							<p>Professional guide</p>
-						</li>
-						<li>
-							<svg width="24px" height="24px">
-								<use href="./images/symbol-defs.svg#icon-ticket"></use>
-							</svg>
-							<p>Travel insurance</p>
-						</li>
-					</ul>
-					<button>Book</button>
-					<p>Price:</p>
-					<p>2000 UAH</p>
-				</li>
-				<li>
-					<img src="./images/Rectangle 1943-min.png" alt="">
-					<h4>Black Sea</h4>
-					<ul>
-						<li>Departure from Odessa (08:00)</li>
-						<li>Primorsky Boulevard (city's scenic walk)</li>
-						<li>Potemkin Steps (historical site and great city view)</li>
-						<li>Odessa Opera and Ballet Theatre (exterior visit)</li>
-						<li>Lunch at a local seafood restaurant</li>
-						<li>Return to Odessa by 20:00</li>
-					</ul>
-					<p>Included:</p>
-					<ul>
-						<li>
-							<svg width="24px" height="24px">
-								<use href="./images/symbol-defs.svg#icon-bus"></use>
-							</svg>
-							<p>Transfer</p>
-						</li>
-						<li>
-							<svg width="24px" height="24px">
-								<use href="./images/symbol-defs.svg#icon-id-card"></use>
-							</svg>
-							<p>Travel insurance</p>
-						</li>
-						<li>
-							<svg width="24px" height="24px">
-								<use href="./images/symbol-defs.svg#icon-face"></use>
-							</svg>
-							<p>Professional guide</p>
-						</li>
-						<li>
-							<svg width="24px" height="24px">
-								<use href="./images/symbol-defs.svg#icon-ticket"></use>
-							</svg>
-							<p>Travel insurance</p>
-						</li>
-					</ul>
-					<button>Book</button>
-					<p>Price:</p>
-					<p>2000 UAH</p>
-				</li>
-			</ul>
+			<div class="container">
+				<h2>Our tours</h2>
+				<ul class="list">
+					<li>
+						<img src="./images/Rectangle 1940-min.png" alt="Lake Synevir">
+						<h4>Lake Synevyr and Shipit waterfall</h4>
+						<ul class="list">
+							<li>Departure from Lviv (07:00) / Stryi (08:00)</li>
+							<li>Pylypets (overview of Shipit waterfall and lunch)</li>
+							<li>Synevyr Pass (photographing and viewing of Carpathian panoramas)</li>
+							<li>"Synevyr" National Park (brown bear rehabilitation center and transition to the lake)
+							</li>
+							<li>Stryi (21:00)/Lviv (return by 22:00)</li>
+						</ul>
+						<p>Included:</p>
+						<ul class="list">
+							<li>
+								<svg width="24px" height="24px">
+									<use href="./images/symbol-defs.svg#icon-bus"></use>
+								</svg>
+								<p>Transfer</p>
+							</li>
+							<li>
+								<svg width="24px" height="24px">
+									<use href="./images/symbol-defs.svg#icon-id-card"></use>
+								</svg>
+								<p>Travel insurance</p>
+							</li>
+							<li>
+								<svg width="24px" height="24px">
+									<use href="./images/symbol-defs.svg#icon-face"></use>
+								</svg>
+								<p>Professional guide</p>
+							</li>
+							<li>
+								<svg width="24px" height="24px">
+									<use href="./images/symbol-defs.svg#icon-ticket"></use>
+								</svg>
+								<p>Travel insurance</p>
+							</li>
+						</ul>
+						<button type="button">Book</button>
+						<p>Price:</p>
+						<p>2000 UAH</p>
+					</li>
+					<li>
+						<img src="./images/Rectangle 1942-min.png" alt="">
+						<h4>Ancient History & Vibrant Present</h4>
+						<ul class="list">
+							<li>Departure from Kiev (08:00)</li>
+							<li>St. Sophia's Cathedral (iconic UNESCO World Heritage site)</li>
+							<li>Golden Gate (historical monument visit)</li>
+							<li>Bessarabsky Market (tasting local delicacies)</li>
+							<li>Kiev Pechersk Lavra (exploration of the significant monastery)</li>
+							<li>Return to Kiev by 20:00</li>
+						</ul>
+						<p>Included:</p>
+						<ul class="list">
+							<li>
+								<svg width="24px" height="24px">
+									<use href="./images/symbol-defs.svg#icon-bus"></use>
+								</svg>
+								<p>Transfer</p>
+							</li>
+							<li>
+								<svg width="24px" height="24px">
+									<use href="./images/symbol-defs.svg#icon-id-card"></use>
+								</svg>
+								<p>Travel insurance</p>
+							</li>
+							<li>
+								<svg width="24px" height="24px">
+									<use href="./images/symbol-defs.svg#icon-face"></use>
+								</svg>
+								<p>Professional guide</p>
+							</li>
+							<li>
+								<svg width="24px" height="24px">
+									<use href="./images/symbol-defs.svg#icon-ticket"></use>
+								</svg>
+								<p>Travel insurance</p>
+							</li>
+						</ul>
+						<button type="button">Book</button>
+						<p>Price:</p>
+						<p>2000 UAH</p>
+					</li>
+					<li>
+						<img src="./images/Rectangle 1943-min.png" alt="">
+						<h4>Black Sea</h4>
+						<ul class="list">
+							<li>Departure from Odessa (08:00)</li>
+							<li>Primorsky Boulevard (city's scenic walk)</li>
+							<li>Potemkin Steps (historical site and great city view)</li>
+							<li>Odessa Opera and Ballet Theatre (exterior visit)</li>
+							<li>Lunch at a local seafood restaurant</li>
+							<li>Return to Odessa by 20:00</li>
+						</ul>
+						<p>Included:</p>
+						<ul class="list">
+							<li>
+								<svg width="24px" height="24px">
+									<use href="./images/symbol-defs.svg#icon-bus"></use>
+								</svg>
+								<p>Transfer</p>
+							</li>
+							<li>
+								<svg width="24px" height="24px">
+									<use href="./images/symbol-defs.svg#icon-id-card"></use>
+								</svg>
+								<p>Travel insurance</p>
+							</li>
+							<li>
+								<svg width="24px" height="24px">
+									<use href="./images/symbol-defs.svg#icon-face"></use>
+								</svg>
+								<p>Professional guide</p>
+							</li>
+							<li>
+								<svg width="24px" height="24px">
+									<use href="./images/symbol-defs.svg#icon-ticket"></use>
+								</svg>
+								<p>Travel insurance</p>
+							</li>
+						</ul>
+						<button type="button">Book</button>
+						<p>Price:</p>
+						<p>2000 UAH</p>
+					</li>
+				</ul>
+			</div>
+
 		</section>
 		<section class="gallery">
-			<h2>Gallery</h2>
-			<ul>
-				<li><img src="/images/unsplash_134-72ac7W4-min.png" alt=""></li>
-				<li><img src="./images/unsplash_bILJtn0d2cM-min.png" alt=""></li>
-				<li><img src="./images/unsplash_l8LzIWmfZdY-1-min.png" alt=""></li>
-				<li><img src="./images/unsplash_l8LzIWmfZdY-2-min.png" alt=""></li>
-				<li><img src="./images/unsplash_l8LzIWmfZdY-3-min.png" alt=""></li>
-				<li><img src="./images/unsplash_l8LzIWmfZdY-4-min.png" alt=""></li>
-				<li><img src="./images/unsplash_l8LzIWmfZdY-min.png" alt=""></li>
-				<li><img src="./images/unsplash_qVJmevSKz4Y-min.png" alt=""></li>
-			</ul>
+			<div class="container">
+				<h2>Gallery</h2>
+				<ul class="list">
+					<li><img src="/images/unsplash_134-72ac7W4-min.png" alt=""></li>
+					<li><img src="./images/unsplash_bILJtn0d2cM-min.png" alt=""></li>
+					<li><img src="./images/unsplash_l8LzIWmfZdY-1-min.png" alt=""></li>
+					<li><img src="./images/unsplash_l8LzIWmfZdY-2-min.png" alt=""></li>
+					<li><img src="./images/unsplash_l8LzIWmfZdY-3-min.png" alt=""></li>
+					<li><img src="./images/unsplash_l8LzIWmfZdY-4-min.png" alt=""></li>
+					<li><img src="./images/unsplash_l8LzIWmfZdY-min.png" alt=""></li>
+					<li><img src="./images/unsplash_qVJmevSKz4Y-min.png" alt=""></li>
+				</ul>
+			</div>
+
 		</section>
 		<section class="reviews">
-			<h2>Reviews</h2>
-			<ul>
-				<li>
-					<img src="./images/users/Dmitro-min.png" alt="photo boy">
-					<p>Dmitro</p>
-					<svg width="136px" height="24px">
-						<use href="./images/svg/Raiting.svg"></use>
-					</svg>
-					<p>It was an incredible trip and I am very grateful to the organizers for the opportunity to learn
-						more about our country</p>
-				</li>
-				<li>
-					<img src="./images/users/Alisa-min.png" alt="photo girl">
-					<p>Alisa</p>
-					<svg>
-						<use href="./images/symbol-defs.svg#icon-Raiting"></use>
-					</svg>
-					<p>I really like to travel and try to do it as often as possible. The last one was to Lake Synevir
-						and it was very cool, a great route, a comfortable bus, delicious food. I will definitely go
-						somewhere else with you</p>
-				</li>
-				<li>
-					<img src="/images/users/Marry-min.png" alt="photo girl">
-					<p>Marry</p>
-					<svg>
-						<use href="./images/symbol-defs.svg#icon-Raiting"></use>
-					</svg>
-					<p>Great tour. I really liked the atmosphere, professional approach and very interesting information
-					</p>
-				</li>
-				<li>
-					<img src="/images/users/Fedir-min.png" alt="photo boy">
-					<p>Fedir</p>
-					<svg>
-						<use href="./images/symbol-defs.svg#icon-Raiting"></use>
-					</svg>
-					<p>We traveled with a company and it was incredible, everyone without exception was satisfied and we
-						will definitely go somewhere else with you and will recommend it to everyone</p>
-				</li>
-			</ul>
+			<div class="container">
+				<h2>Reviews</h2>
+				<ul class="list">
+					<li>
+						<img src="./images/users/Dmitro-min.png" alt="photo boy">
+						<p>Dmitro</p>
+						<svg width="136px" height="24px">
+							<use href="./images/svg/Raiting.svg"></use>
+						</svg>
+						<p>It was an incredible trip and I am very grateful to the organizers for the opportunity to
+							learn
+							more about our country</p>
+					</li>
+					<li>
+						<img src="./images/users/Alisa-min.png" alt="photo girl">
+						<p>Alisa</p>
+						<svg>
+							<use href="./images/symbol-defs.svg#icon-Raiting"></use>
+						</svg>
+						<p>I really like to travel and try to do it as often as possible. The last one was to Lake
+							Synevir
+							and it was very cool, a great route, a comfortable bus, delicious food. I will definitely go
+							somewhere else with you</p>
+					</li>
+					<li>
+						<img src="/images/users/Marry-min.png" alt="photo girl">
+						<p>Marry</p>
+						<svg>
+							<use href="./images/symbol-defs.svg#icon-Raiting"></use>
+						</svg>
+						<p>Great tour. I really liked the atmosphere, professional approach and very interesting
+							information
+						</p>
+					</li>
+					<li>
+						<img src="/images/users/Fedir-min.png" alt="photo boy">
+						<p>Fedir</p>
+						<svg>
+							<use href="./images/symbol-defs.svg#icon-Raiting"></use>
+						</svg>
+						<p>We traveled with a company and it was incredible, everyone without exception was satisfied
+							and we
+							will definitely go somewhere else with you and will recommend it to everyone</p>
+					</li>
+				</ul>
+			</div>
+
 		</section>
 		<section class="start-travel">
+
 			<h4>Start travel</h4>
 			<p>If you want to get an unforgettable trip, quickly fill out the application and we will contact you during
 				the day
@@ -282,44 +313,47 @@
 			<form action="#"></form>
 		</section>
 	</main>
-	<footer>
-		<img src="./images/Logo-min.png" alt="logo">
-		<nav>
-			<ul>
-				<li><a href="">About us</a></li>
-				<li><a href="">Tours</a></li>
-				<li><a href="">Gallery</a></li>
-				<li><a href="">Contacts</a></li>
-			</ul>
-			<ul>
-				<li><a href="">+38097-123-11-11</a></li>
-				<li><a href=""></a>WondersOfUkraine@gmail.com</li>
-				<li><a href=""></a>Lviv, Zaporyzhka, 198</li>
-			</ul>
-			<ul>
-				<li>
-					<a href="">
-						<svg>
-							<use href="./images/svg/facebook.svg"></use>
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<svg>
-							<use href="./images/svg/instagram.svg"></use>
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<svg>
-							<use href="./images/svg/telegram.svg"></use>
-						</svg>
-					</a>
-				</li>
-			</ul>
-		</nav>
+	<footer class="footer">
+		<div class="container footer__container">
+			<img src="./images/Logo-min.png" alt="logo">
+			<nav>
+				<ul class="list">
+					<li><a href="">About us</a></li>
+					<li><a href="">Tours</a></li>
+					<li><a href="">Gallery</a></li>
+					<li><a href="">Contacts</a></li>
+				</ul>
+				<ul class="list">
+					<li><a href="">+38097-123-11-11</a></li>
+					<li><a href=""></a>WondersOfUkraine@gmail.com</li>
+					<li><a href=""></a>Lviv, Zaporyzhka, 198</li>
+				</ul>
+				<ul class="list">
+					<li>
+						<a href="">
+							<svg>
+								<use href="./images/svg/facebook.svg"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<svg>
+								<use href="./images/svg/instagram.svg"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<svg>
+								<use href="./images/svg/telegram.svg"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
 	</footer>
 
 </body>

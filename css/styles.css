@@ -7,6 +7,7 @@
     --input: #B9B9B9;
 }
 
+
 h1,
 h2,
 h3,
@@ -18,6 +19,134 @@ ul {
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--background);
+    color: var(--white);
+}
+
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+    color: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+    display: flex;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body button {
+    cursor: pointer;
+    background-color: var(--button);
+    color: var(--white);
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    border-radius: 4px;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+
+.header-container {
+    margin: 0 auto;
+    padding: 16px 32px;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    /* justify-content: space-between; */
+    /* padding: 16px 16px 0 16px; */
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+}
+
+.hero-container {
+    background-image: url(/images/hero-back-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    min-height: 800px;
+    padding-top: 206px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title {
+    font-family: "Jomolhari", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+}
+
+.hero-title-assent {
+    font-size: 128px;
+    position: relative;
+}
+
+.hero-title-assent::after {
+    content: attr(data-text);
+    font-weight: 400;
+    /* font-size: 64px; */
+    position: absolute;
+    left: 12px;
+    top: -15px;
+    transform-origin: bottom;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    background: linear-gradient(2deg, #fff 0%, rgba(255, 255, 255, 0) 50%);
+    transform: rotateX(180deg);
+    opacity: 0.5;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hero-button {
+    margin-top: 107px;
+    z-index: 1;
+    width: 174px;
+    height: 54px;
+    border: none;
 }
